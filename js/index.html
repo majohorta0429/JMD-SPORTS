@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMD SPORTS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\css\main.css ">
+</head>
+<body>
+    <div class="wrapper">
+        <aside>
+            <header>
+                <h1 class="logo">JMD SPORTS</h1>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <button id = "todos" class="boton-menu boton-categoria active"><i class="bi bi-bag-heart-fill"></i>Todos los productos</button>
+                    </li>
+                    <li>
+                        <button id = "accesorios" class="boton-menu boton-categoria"><i class="bi bi-gem"></i>Accesorios</button>
+                    </li>
+                    <li>
+                        <button id = "mujer" class="boton-menu boton-categoria"><i class="bi bi-gender-female"></i>Mujer</button>
+                    </li>
+                    <li>
+                        <button id = "hombre" class="boton-menu boton-categoria"><i class="bi bi-gender-male"></i>Hombre</button>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-categoria" href="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\js\Sale.html">
+                            <i class="bi bi-tags-fill">  Sale  </i>  
+                        </a>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-categoria" href="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\js\preguntas.html">
+                            <i class="bi bi-patch-question-fill">    Preguntas Frecuentes</i>  
+                        </a>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito active" href="./login.html">
+                            <i class="bi bi-cart-check-fill"></i> Carrito <span id = "numerito" class="numerito">0</span>
+                        </a>
+
+        
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© 2023 JMD SPORTS</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal" id = "titulo-principal">Todos los productos</h2>
+            <div id= "contenedor-productos" class = "contenedor-productos">
+                <!--Esto se va a completar con el JS-->
+                <!-- <div class="producto">
+                    <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\accesorios\a1.png" alt="">
+                    <div class="producto-detalles">
+                        <h3 class="producto-titulo"> Morral</h3>
+                        <p class="producto-precio">$150.000</p>
+                        <button class="producto-agregar">Agregar</button>
+                    </div>
+                </div>
+            
+
+                
+                    <div class="producto">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\accesorios\a2.png" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo"> Maleta</h3>
+                            <p class="producto-precio">$200.000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                 
+
+                
+                    <div class="producto">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\accesorios\a3.png" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo"> Gafas mujer</h3>
+                            <p class="producto-precio">$80.000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+             
+
+                
+                    <div class="producto">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\accesorios\a4.png" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo"> Gafas hombre</h3>
+                            <p class="producto-precio">$90.000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                
+
+                
+                    <div class="producto">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\accesorios\a5.png" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo"> Maleta</h3>
+                            <p class="producto-precio">$180.000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                
+
+                
+                    <div class="producto">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\accesorios\a6.png" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo"> Reloj hombre</h3>
+                            <p class="producto-precio">$300.000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                
+                    <div class="producto">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\accesorios\a7.png" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo"> Gorra plana</h3>
+                            <p class="producto-precio">$130.000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                
+                
+                    <div class="producto">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\accesorios\a8.png" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo"> Gorra</h3>
+                            <p class="producto-precio">$120.000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+            
+                    <div class="producto">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\accesorios\a9.png" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo"> Reloj dama</h3>
+                            <p class="producto-precio">$250.000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+
+                
+                    <div class="producto">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Hombre\h1.png" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo"> Camisa</h3>
+                            <p class="producto-precio">$200.000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                
+
+                
+                    <div class="producto">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Hombre\h2.png" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo"> Conjunto</h3>
+                            <p class="producto-precio">$400.000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                
+
+                
+                    <div class="producto">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Hombre\h3.png" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo"> Camisa</h3>
+                            <p class="producto-precio">$200.000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                
+
+                    <div class="producto">
+                        <img class="producto-imagen" src=" C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Hombre\h4.png" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo"> Camisa</h3>
+                            <p class="producto-precio">$180.000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                
+
+                    <div class="producto">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Hombre\h5.png" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo"> Buso</h3>
+                            <p class="producto-precio">$300.000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                
+
+                    <div class="producto">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Hombre\h6.png" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo"> Jogger</h3>
+                            <p class="producto-precio">$230.000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                
+
+                    <div class="producto">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Hombre\h7.png" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo"> Sudadera</h3>
+                            <p class="producto-precio">$400.000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                
+
+                    <div class="producto">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Hombre\h8.png" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo"> Chaqueta</h3>
+                            <p class="producto-precio">$230.000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                
+
+                    <div class="producto">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Hombre\h9.png" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo"> Sudadera</h3>
+                            <p class="producto-precio">$250.000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                
+
+                    <div class="producto">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Mujer\m1.png" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo"> Blusa</h3>
+                            <p class="producto-precio">$95.000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                
+
+                    <div class="producto">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Mujer\m2.png" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo"> Conjunto</h3>
+                            <p class="producto-precio">$430.000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                
+
+                    <div class="producto">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Mujer\m3.png" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo"> Leggie</h3>
+                            <p class="producto-precio">$130.000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                
+
+                    <div class="producto">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Mujer\m4.png" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo"> Conjunto</h3>
+                            <p class="producto-precio">$430.000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                
+
+                    <div class="producto">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Mujer\m5.png" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo"> Chaqueta</h3>
+                            <p class="producto-precio">$390.000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                
+
+                    <div class="producto">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Mujer\m6.png" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo"> Camisa rosada</h3>
+                            <p class="producto-precio">$80.000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                
+
+                    <div class="producto">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Mujer\m7.png" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo"> Camisa salmon</h3>
+                            <p class="producto-precio">$90.000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                
+
+                    <div class="producto">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Mujer\m8.png" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo"> Vestido</h3>
+                            <p class="producto-precio">$180.000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                
+
+                    <div class="producto">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Mujer\m9.png" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo"> Falda con Short</h3>
+                            <p class="producto-precio">$210.000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div> -->
+            </div>    
+        </main>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src = "C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\js\main.js"></script>
+</body>
+</html>
