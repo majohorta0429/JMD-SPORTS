@@ -1,0 +1,25 @@
+
+language: php
+
+php:
+  - '7.4'
+  - '8.0'
+
+services:
+  - mysql
+
+dist: focal
+
+before_script:
+  # Create database for the tests
+  - mysql -e 'CREATE DATABASE jmd_sports_test;'
+
+  # Migrate database
+  - php php/migrations.php
+  
+  # Install dependencies 
+  - composer install --no-interaction
+
+script:
+  # Run unit tests
+  - php php/tests.php
